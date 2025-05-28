@@ -1,0 +1,7 @@
+{
+  "name": "postgresql bootcamp",
+  "dockerComposeFile": "./docker-compose.yaml",
+  "service": "postgres",
+  "workspaceFolder": "/home/workspace",
+  "forwardPorts": [5432, 5050]
+}
