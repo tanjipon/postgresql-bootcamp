@@ -1,7 +1,8 @@
 {
   "name": "postgresql bootcamp",
   "dockerComposeFile": "./docker-compose.yaml",
-  "service": "postgres",
-  "workspaceFolder": "/home/workspace",
+  "postStartCommand": "(cd ./db/ && liquibase update)",
+  "service": "app",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
   "forwardPorts": [5432, 5050]
 }
